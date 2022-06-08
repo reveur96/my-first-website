@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLLYS COFFEE</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/indexjs.js"></script>
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 상단 -->
+        <header id="header">
+            <div id="header_in">
+                <h1 class="logo_s"><img src="./img/HOLLYS LOGO small.png" alt="할리스로고" /></h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="n_menu"><a href="#">menu<span>메뉴</span></a></li>
+                        <li class="n_menu"><a href="#">service<span>서비스</span></a></li>
+                        <li class="n_menu"><a href="#">news<span>소식</span></a></li>
+                        <li class="n_menu"><a href="#">hollys<span>할리스소개</span></a></li>
+                    </ul>
+                </nav>
+                <div class="h_group">
+                    <ul class="info_mn">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">마이 멤버십</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li id="trsEnglish"><a href="https://www.hollys.co.kr/lang/en.do">ENGLISH</a></li>
+                        <li id="trsChinese"><a href="https://www.hollys.co.kr/lang/cn.do">CHINESE</a></li>
+                    </ul>
+                    <input type="text" value="매장 찾기">
+                </div>
+            </div>
+            <div id="submn_area">
+                <ul class="s_menu">
+                    <li><a href="#">Drink</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li><a href="#">MD 식품</a></li>
+                    <li><a href="#">MD 상품</a></li>
+                </ul>
+                <ul class="s_menu">
+                    <li><a href="#">멤버십</a></li>
+                    <li><a href="#">스마트오더</a></li>
+                    <li><a href="#">Coffee<br>Academy</a></li>
+                    <li><a href="#">할리스 카드</a></li>
+                    <li><a href="#">e-store<br>바로가기</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">매장찾기</a></li>
+                </ul>
+                <ul class="s_menu">
+                    <li><a href="#">Notice</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">SNS 바로가기</a></li>
+                </ul>
+                <ul class="s_menu">
+                    <li><a href="#">HOLLYS is</a></li>
+                    <li><a href="#">채용안내</a></li>
+                    <li><a href="#">프랜차이즈</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- 퀵메뉴 -->
+        <div id="q_mn">
+            <ul class="menu">
+                <li><a href="#"><b>주문</b><br>바로가기</a></li>
+                <div class="m_line"> </div>
+                <li><a href="#"><b>프랜차이즈</b><br>문의하기</a></li>
+            </ul>
+        </div>
+        <!-- 메인이미지 -->
+        <section id="main_img">
+            <div id="viewer">
+
+                <!-- <div id="slide1" class="slide">
+                    <div class="event_btm">
+                        <div class="event_in">
+                            <h3>THANK YOU<br>
+                            감사의 마음을 전하세요</h3>
+                            <div class="line"></div>
+                            <p>벚꽃이 만발하는 로맨틱한 봄날의 어느날<br>
+                            할리스의 시그니처 케익과 함께 달콤한 4월을 보내세요!<br> 
+                            (홀케이크 사전 예약시 아메리카노(R)  교환권 2매를 증정)</p>
+                            <span>예약 기간 : 4.15(금)~4.28(목)</span>
+                            <a href="#">이벤트 바로가기</a>
+                        </div>
+                    </div>
+                    <img src="./img/slide1.png" alt="" class="img1">
+                </div>
+                <div id="slide2" class="slide">
+                    <div class="event_btm">
+                        <div class="event_in">
+                            <h3>Sweet night<br>
+                            달콤한 디저트타임</h3>
+                            <div class="line"></div>
+                            <p>매일밤 9시부터 디저트 최대 30% 할인!<br>
+                            할리스의 시그니처 디저트들을 할인된 가격으로 만나보세요!<br> 
+                            (본 행사는 매장별로 상이할 수 있습니다.)</p>
+                            <span>예약 기간 : 5.15(금)~5.28(목)</span>
+                            <a href="#">이벤트 바로가기</a>
+                        </div>
+                    </div>
+                    <img src="./img/slide3.png" alt="" class="img3">
+                </div>
+                <div id="slide3" class="slide">
+                    <div class="event_btm">
+                        <div class="event_in">
+                            <h3>Membership<br>
+                            6월의 특별한 선물</h3>
+                            <div class="line"></div>
+                            <p>할리스 멤버십회원만이 누릴 수 있는 특별한 혜택<br>
+                            가입과 동시에 제공되는 다양한 쿠폰들을 받아보세요!<br> 
+                            (등급에 따라 혜택이 상이할 수 있습니다.)</p>
+                            <span>예약 기간 : 6.01(금)~6.30(목)</span>
+                            <a href="#">이벤트 바로가기</a>
+                        </div>
+                    </div>
+                    <img src="./img/slide2.png" alt="" class="img2">
+                </div> -->
+                <div class="slide fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./img/slide1.png" style="width:100%">
+                    <div class="event_btm">
+                        <div class="event_in">
+                            <h3>THANK YOU<br>
+                                감사의 마음을 전하세요</h3>
+                            <div class="line"></div>
+                            <p>벚꽃이 만발하는 로맨틱한 봄날의 어느날<br>
+                                할리스의 시그니처 케익과 함께 달콤한 4월을 보내세요!<br>
+                                (홀케이크 사전 예약시 아메리카노(R) 교환권 2매를 증정)</p>
+                            <span>예약 기간 : 4.15(금)~4.28(목)</span>
+                            <a href="#">이벤트 바로가기</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./img/slide2.png" style="width:100%">
+                    <div class="event_btm">
+                        <div class="event_in">
+                            <h3>Sweet night<br>
+                                달콤한 디저트타임</h3>
+                            <div class="line"></div>
+                            <p>매일밤 9시부터 디저트 최대 30% 할인!<br>
+                                할리스의 시그니처 디저트들을 할인된 가격으로 만나보세요!<br>
+                                (본 행사는 매장별로 상이할 수 있습니다.)</p>
+                            <span>예약 기간 : 5.15(금)~5.28(목)</span>
+                            <a href="#">이벤트 바로가기</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./img/slide3.png" style="width:100%">
+                    <div class="event_btm">
+                        <div class="event_in">
+                            <h3>Membership<br>
+                                6월의 특별한 선물</h3>
+                            <div class="line"></div>
+                            <p>할리스 멤버십회원만이 누릴 수 있는 특별한 혜택<br>
+                                가입과 동시에 제공되는 다양한 쿠폰들을 받아보세요!<br>
+                                (등급에 따라 혜택이 상이할 수 있습니다.)</p>
+                            <span>예약 기간 : 6.01(금)~6.30(목)</span>
+                            <a href="#">이벤트 바로가기</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <ul id="btns">
+                <li class="dot"> </li>
+                <li class="dot"> </li>
+                <li class="dot"> </li>
+            </ul>
+
+        </section>
+
+        <!-- 컨텐츠 -->
+        <section id="contents">
+            <!-- 컨텐츠 할리스멤버십 -->
+            <div id="member">
+                <div class="line"> </div>
+                <div id="member_in">
+                    <img src="./img/HOLLYS LOGO.png" alt="할리스로고" />
+                    <div class="m_group">
+                        <h3>HOLLYS MEMBERSHIP</h3>
+                        <p>할리스 멤버십 'CROWN'으로 다양한 혜택을 즐겨보세요.<br>
+                            멤버십 등급에 따라 다양한 무료 쿠폰 증정과 함께 시즌 스페셜 혜택이 제공됩니다.<br>
+                            (멤버십에 현금영수증 정보 등록 후 할리스 카드 이용 시 자동 소득공제)</p>
+                        <a href="#">멤버십 가입하기</a>
+                    </div>
+                </div>
+                <div class="line"> </div>
+            </div>
+            <!-- 컨텐츠 할리스초이스 -->
+            <article id="h_choice">
+                <header>
+                    <h3>HOLLYS's Choice</h3>
+                </header>
+                <section>
+                    <ul class="hchoice_mn">
+                        <li class="mn_title">
+                            <h3>Drink</h3>
+                            <ul class="mn_sub">
+                                <li><a href="#">Coffee</a></li>
+                                <li><a href="#">Tee</a></li>
+                                <li><a href="#">Sparkling</a></li>
+                            </ul>
+                        </li>
+                        <li class="mn_title">
+                            <h3>Food</h3>
+                            <ul class="mn_sub">
+                                <li><a href="#">Coffee</a></li>
+                                <li><a href="#">Tee</a></li>
+                                <li><a href="#">Sparkling</a></li>
+                            </ul>
+                        </li>
+                        <li class="mn_title">
+                            <h3>MD Foodstuff</h3>
+                            <ul class="mn_sub">
+                                <li><a href="#">Coffee</a></li>
+                                <li><a href="#">Tee</a></li>
+                                <li><a href="#">Sparkling</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="c_group">
+                        <!-- <ul>
+                            <li><img src="./img/drink_img1.png" alt="상품이미지"></li>
+                            <li><img src="./img/drink_img2.png" alt="상품이미지"></li>
+                            <li><img src="./img/drink_img3.png" alt="상품이미지"></li>
+                        </ul> -->
+                        <div id="imgbox">
+                            <div class="l_img">
+                                <img src="./img/drink_img1.png" title="image1">
+                                <!-- <div><태그추가></div> -->
+                            </div>
+                            <div class="s_img">
+                                <a href="./img/drink_img2.png" title="image2"><img src="./img/drink_img_s2.png" /></a>
+                                <a href="./img/drink_img3.png" title="image3"><img src="./img/drink_img_s3.png" /></a>
+                                <a href="./img/drink_img1.png" title="image1"><img src="./img/drink_img_s1.png" /></a>
+                            </div>
+
+                        </div>
+                        <div class="group_in">
+                            <h4>Vanilla Delight </h4>
+                            <p>듀얼브루 원액으로 만들어 더욱 부드럽고<br>
+                                편안해진 바닐라 딜라이트 (*바닐라 딜라<br>
+                                이트 제조에 사용되는 파우더에 카페인이<br>
+                                일부 함유되어 있음)</p>
+                            <a href="#">구매하기</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <!-- 컨텐츠 프랜차이즈 -->
+            <article id="franchise">
+                <div id="frnc_in">
+                    <h3 style="color: crimson;">HOLLYS</h3>
+                    <h3 style="color: #fff; margin-top: -20px;">FRANCHISE</h3>
+                    <div class="line"></div>
+                    <p>한국 최초의 에스프레소 전문점을 보유한 <br>
+                        커피 브랜드 할리스는 작은 차이의 미학을 압니다.<br>
+                        그 '의미 있는 작은 차이'가 할리스 커피를 더욱 특별하게 만듭니다.<br>
+                        커피의 즐거움을 만드는 대한민국 대표 커피 전문점 할리스와 함께하세요.</p>
+                    <div class="frnc_btn">
+                        <a href="#">브랜드소개</a>
+                        <a href="#">가맹점 문의</a>
+                        <a href="#">B2B 사업안내</a>
+                    </div>
+                </div>
+            </article>
+            <!-- 컨텐츠 할리스 카드 -->
+            <div id="hcard">
+                <div class="line"> </div>
+                <div id="hcard_in">
+                    <img src="./img/hollys card.png" alt="할리스카드" />
+                    <div class="c_group">
+                        <h3>HOLLYS CARD</h3>
+                        <p>할리스카드 (Gift card)로 쉽고 간편하게<br>
+                            소중한 사람들에게 마음을 전하세요.</p>
+                        <a href="#">선물하기</a>
+                    </div>
+                </div>
+                <div class="line"> </div>
+            </div>
+            <!-- 컨텐츠 스페션 초이스 -->
+            <article id="s_choice">
+                <header>
+                    <h3>Special Choice</h3>
+                </header>
+                <section>
+                    <ul class="schoice_mn">
+                        <li class="mn_title">
+                            <h3>Drink</h3>
+                            <ul class="mn_sub">
+                                <li><a href="#">Coffee</a></li>
+                                <li><a href="#">Tee</a></li>
+                                <li><a href="#">Sparkling</a></li>
+                            </ul>
+                        </li>
+                        <li class="mn_title">
+                            <h3>Food</h3>
+                            <ul class="mn_sub">
+                                <li><a href="#">Coffee</a></li>
+                                <li><a href="#">Tee</a></li>
+                                <li><a href="#">Sparkling</a></li>
+                            </ul>
+                        </li>
+                        <li class="mn_title">
+                            <h3>MD Foodstuff</h3>
+                            <ul class="mn_sub">
+                                <li><a href="#">Coffee</a></li>
+                                <li><a href="#">Tee</a></li>
+                                <li><a href="#">Sparkling</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="c_group">
+                        <ul>
+                            <li><img src="./img/drink_img_s3.png" alt="상품이미지"></li>
+                            <li><img src="./img/drink_img_s2.png" alt="상품이미지"></li>
+                            <li><img src="./img/drink_img1.png" alt="상품이미지"></li>
+                        </ul>
+                        <div class="group_in">
+                            <h4>Vanilla Delight </h4>
+                            <p>듀얼브루 원액으로 만들어 더욱 부드럽고<br>
+                                편안해진 바닐라 딜라이트 (*바닐라 딜라<br>
+                                이트 제조에 사용되는 파우더에 카페인이<br>
+                                일부 함유되어 있음)</p>
+                            <a href="#">구매하기</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <!-- 컨텐츠 커피 아카데미 -->
+            <article id="academy">
+                <div id="academy_in">
+                    <h3>Coffee Academy</h3>
+                    <p>할리스커피 멤버십 레드 회원만을 위한 특별한 혜택! <br>
+                        "다양한 커피 추출 도구" <br>
+                        여러 가지 추출 도구로 커피의 다양한 추출법을 체험하며, <br>
+                        나만의 커피 취향 찾기!</p>
+                    <a href="#">더 알아보기</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- 하단 -->
+        <footer id="footer">
+            <div id="footer_in">
+                <div class="f_top">
+                    <h4>HOLLYS Live</h4>
+                    <div class="sns">
+                        <a href="https://www.instagram.com/hollyscoffee.official/" target="_blank"><img
+                                src="./img/instagram_logo.png" alt="인스타그램"></a>
+                        <a href="https://www.facebook.com/EnjoyHollys" target="_blank"><img
+                                src="./img/facebook_logo.png" alt="facebook"></a>
+                        <a href="https://m.blog.naver.com/PostList.nhn?blogId=hollyskr" target="_blank"><img
+                                src="./img/blog_logo.png" alt="블로그"></a>
+                    </div>
+                </div>
+                <div class="line"> </div>
+                <div class="f_bottom">
+                    <ul>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">서비스이용약관</a></li>
+                        <li><a href="#">멤버십이용약관</a></li>
+                        <li><a href="#">할리스카드이용약관</a></li>
+                        <li><a href="#">고객문의</a></li>
+                        <li><a href="#">고개설문</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">BI 소개</a></li>
+                    </ul>
+                    <address>
+                        법인명: (주) 케이지할리스에프앤비 대표자: 이종현 사업자등록번호 211-87-61044 통신판매업: 제2019-서울종로-0193호 <br>
+                        주소 : 서울특별시 종로구 율곡로 88 삼환빌딩 8층 (운니동) 대표전화 : 02-2188-7100 (가맹문의 : 02-6350-7229) <br>
+                        COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/slide.js"></script>
+</body>
+
+</html>
