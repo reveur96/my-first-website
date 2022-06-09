@@ -1,32 +1,4 @@
 $(document).ready(function () {
-    //nav
-    $('#submn_area').hide();
-
-    $('#nav').mouseenter(function () {
-        $('#submn_area').stop().show().animate({ height: '290px' }, 800);
-        $('.s_menu').stop().show();
-    });
-
-    $('.n_menu a').hover(
-        function () {
-
-            $(this).addClass('on');
-            $(this).find('span').css({ display: 'block' });
-        },
-        function () {
-            $('.n_menu a').removeClass('on');
-            $(this).find('span').css({ display: 'none' })
-        }
-    );
-    $('#submn_area').mouseleave(function () {
-        $('#submn_area').stop().animate({ height: '0px' }, 500);
-        $('.s_menu').stop().hide();
-    });
-
-
-    //main_img slide
-
-
     //프랜차이즈
     $('.frnc_btn a').hover(
         function () {
@@ -78,6 +50,6 @@ $(function () {
         });
 
         var scrTop = sct + 400;
-        $('#q_mn').stop().animate({ top: scrTop }, 400);
+        $('#right_mn').stop().animate({ top: scrTop }, 400);
     })
 });

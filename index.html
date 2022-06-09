@@ -11,7 +11,6 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/indexjs.js"></script>
 
-
 </head>
 
 <body>
@@ -22,10 +21,39 @@
                 <h1 class="logo_s"><img src="./img/HOLLYS LOGO small.png" alt="할리스로고" /></h1>
                 <nav id="nav">
                     <ul>
-                        <li class="n_menu"><a href="#">menu<span>메뉴</span></a></li>
-                        <li class="n_menu"><a href="#">service<span>서비스</span></a></li>
-                        <li class="n_menu"><a href="#">news<span>소식</span></a></li>
-                        <li class="n_menu"><a href="#">hollys<span>할리스소개</span></a></li>
+                        <li class="n_menu"><a href="#"><span>메뉴</span>menu</a>
+                            <ul class="s_menu">
+                                <li><a href="#">Drink</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">MD 식품</a></li>
+                                <li><a href="#">MD 상품</a></li>
+                            </ul>
+                        </li>
+                        <li class="n_menu"><a href="#"><span>서비스</span>service</a>
+                            <ul class="s_menu">
+                                <li><a href="#">멤버십</a></li>
+                                <li><a href="#">스마트오더</a></li>
+                                <li><a href="#">Coffee<br>Academy</a></li>
+                                <li><a href="#">할리스 카드</a></li>
+                                <li><a href="#">e-store<br>바로가기</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">매장찾기</a></li>
+                            </ul>
+                        </li>
+                        <li class="n_menu"><a href="#"><span>소식</span>news</a>
+                            <ul class="s_menu">
+                                <li><a href="#">Notice</a></li>
+                                <li><a href="#">Event</a></li>
+                                <li><a href="#">SNS 바로가기</a></li>
+                            </ul>
+                        </li>
+                        <li class="n_menu"><a href="#"><span>할리스소개</span>hollys</a>
+                            <ul class="s_menu">
+                                <li><a href="#">HOLLYS is</a></li>
+                                <li><a href="#">채용안내</a></li>
+                                <li><a href="#">프랜차이즈</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div class="h_group">
@@ -39,36 +67,9 @@
                     <input type="text" value="매장 찾기">
                 </div>
             </div>
-            <div id="submn_area">
-                <ul class="s_menu">
-                    <li><a href="#">Drink</a></li>
-                    <li><a href="#">Food</a></li>
-                    <li><a href="#">MD 식품</a></li>
-                    <li><a href="#">MD 상품</a></li>
-                </ul>
-                <ul class="s_menu">
-                    <li><a href="#">멤버십</a></li>
-                    <li><a href="#">스마트오더</a></li>
-                    <li><a href="#">Coffee<br>Academy</a></li>
-                    <li><a href="#">할리스 카드</a></li>
-                    <li><a href="#">e-store<br>바로가기</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">매장찾기</a></li>
-                </ul>
-                <ul class="s_menu">
-                    <li><a href="#">Notice</a></li>
-                    <li><a href="#">Event</a></li>
-                    <li><a href="#">SNS 바로가기</a></li>
-                </ul>
-                <ul class="s_menu">
-                    <li><a href="#">HOLLYS is</a></li>
-                    <li><a href="#">채용안내</a></li>
-                    <li><a href="#">프랜차이즈</a></li>
-                </ul>
-            </div>
         </header>
-        <!-- 퀵메뉴 -->
-        <div id="q_mn">
+        <!-- 우측메뉴 -->
+        <div id="right_mn">
             <ul class="menu">
                 <li><a href="#"><b>주문</b><br>바로가기</a></li>
                 <div class="m_line"> </div>
@@ -78,8 +79,8 @@
         <!-- 메인이미지 -->
         <section id="main_img">
             <div id="viewer">
-
-                <!-- <div id="slide1" class="slide">
+                <div id="slide1" class="slide">
+                    <div class="numbertext">1 / 3</div>
                     <div class="event_btm">
                         <div class="event_in">
                             <h3>THANK YOU<br>
@@ -92,9 +93,9 @@
                             <a href="#">이벤트 바로가기</a>
                         </div>
                     </div>
-                    <img src="./img/slide1.png" alt="" class="img1">
                 </div>
                 <div id="slide2" class="slide">
+                    <div class="numbertext">2 / 3</div>
                     <div class="event_btm">
                         <div class="event_in">
                             <h3>Sweet night<br>
@@ -107,9 +108,9 @@
                             <a href="#">이벤트 바로가기</a>
                         </div>
                     </div>
-                    <img src="./img/slide3.png" alt="" class="img3">
                 </div>
                 <div id="slide3" class="slide">
+                    <div class="numbertext">3 / 3</div>
                     <div class="event_btm">
                         <div class="event_in">
                             <h3>Membership<br>
@@ -122,66 +123,13 @@
                             <a href="#">이벤트 바로가기</a>
                         </div>
                     </div>
-                    <img src="./img/slide2.png" alt="" class="img2">
-                </div> -->
-                <div class="slide fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="./img/slide1.png" style="width:100%">
-                    <div class="event_btm">
-                        <div class="event_in">
-                            <h3>THANK YOU<br>
-                                감사의 마음을 전하세요</h3>
-                            <div class="line"></div>
-                            <p>벚꽃이 만발하는 로맨틱한 봄날의 어느날<br>
-                                할리스의 시그니처 케익과 함께 달콤한 4월을 보내세요!<br>
-                                (홀케이크 사전 예약시 아메리카노(R) 교환권 2매를 증정)</p>
-                            <span>예약 기간 : 4.15(금)~4.28(목)</span>
-                            <a href="#">이벤트 바로가기</a>
-                        </div>
-                    </div>
                 </div>
-
-                <div class="slide fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="./img/slide2.png" style="width:100%">
-                    <div class="event_btm">
-                        <div class="event_in">
-                            <h3>Sweet night<br>
-                                달콤한 디저트타임</h3>
-                            <div class="line"></div>
-                            <p>매일밤 9시부터 디저트 최대 30% 할인!<br>
-                                할리스의 시그니처 디저트들을 할인된 가격으로 만나보세요!<br>
-                                (본 행사는 매장별로 상이할 수 있습니다.)</p>
-                            <span>예약 기간 : 5.15(금)~5.28(목)</span>
-                            <a href="#">이벤트 바로가기</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="./img/slide3.png" style="width:100%">
-                    <div class="event_btm">
-                        <div class="event_in">
-                            <h3>Membership<br>
-                                6월의 특별한 선물</h3>
-                            <div class="line"></div>
-                            <p>할리스 멤버십회원만이 누릴 수 있는 특별한 혜택<br>
-                                가입과 동시에 제공되는 다양한 쿠폰들을 받아보세요!<br>
-                                (등급에 따라 혜택이 상이할 수 있습니다.)</p>
-                            <span>예약 기간 : 6.01(금)~6.30(목)</span>
-                            <a href="#">이벤트 바로가기</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-            <ul id="btns">
-                <li class="dot"> </li>
-                <li class="dot"> </li>
-                <li class="dot"> </li>
+            <ul class="btns">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
             </ul>
-
         </section>
 
         <!-- 컨텐츠 -->
@@ -390,6 +338,7 @@
             </div>
         </footer>
     </div>
+    <script src="./js/nav.js"></script>
     <script src="./js/slide.js"></script>
 </body>
 

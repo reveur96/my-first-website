@@ -6,49 +6,49 @@
 /* 상단 */
 #header {
         width: 100%;
-        height: 140px;
+        height: 120px;
         display: flex;
         justify-content: center;
         align-items: center;
         position: fixed;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.9);
         z-index: 9999;
 }
 
 #header_in {
         width: 1200px;
-        height: 120px;
+        height: 110px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        /* background-color: cornflowerblue; */
+        /* background-color: cadetblue; */
 }
 
 /* 상단 로고 */
 #header_in .logo_s {
         display: flex;
         align-items: center;
+        margin-bottom: 10px;
 }
 
 /* 상단 네비 */
-#nav {
+#nav {  width: 500px;
         height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        padding-top: 45px;
+        box-sizing: border-box;
+        
 }
 
 #nav>ul {
-        width: 500px;
-        height: 30px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        /* background-color: antiquewhite; */
 }
 
 #nav>ul>.n_menu {
-        width: 100px;
+        width: 125px;
         text-align: center;
 }
 
@@ -63,54 +63,44 @@
 }
 
 #nav>ul>.n_menu>a>span {
+        display: block;
         font-size: 12px;
         color: #555;
-        text-align: center;
-        display: none;
+        visibility: hidden;
 }
 
 /*네비 서브메뉴*/
-#submn_area {
-        width: 500px;
-        position: absolute;
-        top: 132px;
-        left: 29.5vw;
-        z-index: 9999;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 5px;
-}
-
-#submn_area>ul.s_menu {
-        width: 10vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-}
-
-#submn_area>ul.s_menu>li {
-        margin: 9px 0;
-        text-align: center;
-        line-height: 13px;
-}
-
-#submn_area>ul.s_menu>li>a {
-        font-size: 14px;
-        color: #555;
-}
-
-#submn_area>ul.s_menu>li>a:hover {
-        font-size: 14px;
-        font-weight: 700;
-}
+.s_menu { background-color: rgba(255, 255, 255, 0.9);
+        border: 1px solid #ccc;
+        border-radius: 2%;
+            padding: 20px 10px 10px 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+    }
+    
+    .s_menu>li {
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 13px;
+    }
+    
+    .s_menu>li>a {
+            font-size: 14px;
+            color: #555;
+    }
+    
+    .s_menu>li>a:hover {
+            font-size: 14px;
+            font-weight: 700;
+    }
 
 /* 상단 info_mn */
 #header_in .h_group {
         width: 320px;
-        height: 120px;
+        height: 110px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -158,15 +148,15 @@
         border-radius: 15px;
         padding-left: 15px;
         line-height: 35px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
 }
 
-/* 퀵메뉴 */
-#q_mn {
+/* 우측 고정메뉴 */
+#right_mn {
         width: 100px;
         height: 160px;
-        background-color: #555;
-        border: 2px solid #777;
+        background-color: rgba(70, 70, 70, 0.9);
+        border: 1px solid #777;
         padding: 10px;
         border-radius: 10px;
         box-sizing: border-box;
@@ -176,7 +166,7 @@
         z-index: 9999;
 }
 
-#q_mn ul.menu {
+#right_mn ul.menu {
         margin: 0 auto;
         height: 140px;
         display: flex;
@@ -185,17 +175,17 @@
         align-items: center;
 }
 
-#q_mn ul li {
+#right_mn ul li {
         text-align: center;
         line-height: 20px;
 }
 
-#q_mn ul li a {
+#right_mn ul li a {
         font-size: 13px;
         color: #fff;
 }
 
-#q_mn ul div {
+#right_mn ul div {
         width: 60px;
         height: 1px;
         background-color: #777;
@@ -203,34 +193,16 @@
 
 /* 메인이미지 */
 #main_img {
-        width: 100%;
-        height: 940px;
-        position: relative;
-        overflow: hidden;
-}
+        width: 100%; height: 940px;
+        position: relative;}
+#viewer {width: 100%; height: 940px;
+        overflow: hidden; position: relative;}
+#viewer .slide {width: 100%; height: 940px; position: absolute;}
+#slide1{top: 0; left: 0; background: url(../img/slide1.png)no-repeat 0 0;}
+#slide2{top: 0; left: 100%; background: url(../img/slide2.png)no-repeat 0 0;}
+#slide3{top: 0; left: 200%; background: url(../img/slide3.png)no-repeat 0 0;}
 
-#viewer {
-        max-width: 1920px;
-        position: relative;
-        margin: auto;
-        height: 940px;
-}
-
-#viewer>.slide {
-        position: absolute;
-        display: none;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-        color: #f2f2f2;
-        font-size: 15px;
-        margin: 5px 15px;
-
-        position: absolute;
-        top: 150px;
-}
-
+/* 메인이미지 slide text */
 #viewer>.slide>.event_btm {
         width: 600px;
         height: 400px;
@@ -292,66 +264,28 @@
         line-height: 35px;
 }
 
-
-
-/* Fading animation */
-.fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 2s;
-        animation-name: fade;
-        animation-duration: 2s;
-}
-
-@-webkit-keyframes fade {
-        from {
-                opacity: 0.4
-        }
-
-        to {
-                opacity: 1
-        }
-}
-
-@keyframes fade {
-        from {
-                opacity: 0.4
-        }
-
-        to {
-                opacity: 1
-        }
-}
-
-
-#btns {
+/* 메인이미지 slide number */
+.numbertext {
+        color: #ccc;
+        font-size: 15px;
+        margin: 5px 15px;
         position: absolute;
-        left: 45vw;
-        bottom: 15vh;
-        z-index: 9999;
-}
+        right: 50px;
+        bottom: 30px;}
 
-.dot {
-        float: left;
-        margin-right: 30px;
-        width: 18px;
-        height: 18px;
-        background-color: #fff;
-        border-radius: 25px;
-        cursor: pointer;
-}
-
-.active {
-        background-color: #555;
-
-}
-
+/* 메인이미지 slide button */
+#main_img .btns{position: absolute; left: 50%; bottom: 30px; z-index: 9999;}
+#main_img .btns li{float: left; 
+                width: 15px; height: 15px;
+                margin-left: 10px;
+                background-color: azure;
+                border-radius: 50%; 
+                overflow: hidden;}
+#main_img .btns li.on{background-color: #555;}
 
 
 /* 컨텐츠 */
-#contents {
-        width: 100%;
-        /* background-color: rgb(227, 227, 36); */
-}
+#contents {width: 100%;}
 
 /* 컨텐츠 멤버십 배너 */
 #member {
@@ -363,8 +297,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        /* outline :1px solid #fff;
-        outline-offset: -20px; */
 }
 
 #member>div.line {
