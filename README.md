@@ -2,8 +2,10 @@
  **Hollys Coffee brand website renewer(unofficial)**
  
 **Overview**
-to help those who want to buy some coffee or stuff more easily.
-the original brand site is not convenience. there are too many buttons and icons on the main page, so that user can't find information what they want.
+To help those who want to buy some coffee or stuff more easily.
+The original brand site is not convenience.
+There are too many buttons and icons on the main page, so that user can't find information what they want.
+
 기존의 브랜드 사이트는 정보들이 산발적으로 분포되어있어 이용자로 하여금 원하는 정보를 빠르게 찾는데 어려움이 있었습니다.
 또한 상품에 대한 정보를 얻는 페이지와 구매할 수 있는 페이지가 분리되어 있어 구매를 희망하는 이용자가 여러번의 번거로운 과정을 거쳐야만 구매를 할 수 있었습니다.
 이러한 점을 개선하여 브랜드 상품을 고객이 더 쉽게 구매할 수 있도록 하는 것을 목표로 프로젝트를 진행하였습니다.
